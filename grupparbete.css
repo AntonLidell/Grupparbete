@@ -3,26 +3,20 @@ body {
 
   }
 
-div1 {  
-  margin-left: 50%;
-  float: left;
-  width:950px;
-  height:450px;
-}
+  * {
+    box-sizing: border-box;
+  }
 
-div2 {
-  width:950px;
-  height:450px;
-}
-
-div3 {
-  margin-left: 50%;
-  float: left;
-  width:950px;
-  height:450px;
-}
-
-div4 {
-  width:950px;
-  height:450px;
-}
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 450px; 
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
